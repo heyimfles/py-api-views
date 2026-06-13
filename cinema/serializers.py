@@ -24,6 +24,8 @@ class MovieSerializer(serializers.ModelSerializer):
             "title",
             "description",
             "duration",
+            "actors",
+            "genres",
         ]
 
     def create(self, validated_data):
