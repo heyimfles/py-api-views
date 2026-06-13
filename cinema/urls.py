@@ -26,7 +26,7 @@ cinema_hall_detail = CinemaHallViewSet.as_view(
     actions={
         "get": "retrieve",
         "put": "update",
-        "path": "partial_update",
+        "patch": "partial_update",
         "delete": "destroy",
     }
 )
