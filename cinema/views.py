@@ -80,7 +80,8 @@ class GenreDetail(APIView):
         genre = self.get_object(pk)
         serializer = GenreSerializer(
             genre,
-            data=request.data
+            data=request.data,
+            partial=True
         )
         serializer.is_valid(raise_exception=True)
         serializer.save()
